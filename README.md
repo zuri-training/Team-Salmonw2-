@@ -57,7 +57,7 @@ This project is aimed at developing a platform that offers a donation page where
 
 ## Authors 
 - [@osmmacfides](https://github.com/osmmacfides)
-- [@addusername](https://github.com/og-lati)
+- [@og-lati](https://github.com/og-lati)
 - [@addusername](https://github.com/addusername)
 - [@addusername](https://github.com/addusername)
 - [@addusername](https://github.com/addusername)
