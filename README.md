@@ -63,7 +63,7 @@ This project is aimed at developing a platform that offers a donation page where
 - [@Paulndambo](https://github.com/Paulndambo)
 - [@aristotle909](https://github.com/Aristotle909)
 - [@swarthyhappy](https://github.com/swarthyhappy)
-- [@addusername](https://github.com/addusername)
+- [@Kingtanda](https://github.com/Kingtanda)
 - [@addusername](https://github.com/addusername)
 - [@addusername](https://github.com/addusername)
 - [@addusername](https://github.com/addusername)
