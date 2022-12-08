@@ -4,6 +4,8 @@ Alumni Donate Platform
 
 ## Project Description
 
+teting synch
+
 
 "We present a design and open source implementation for an Alumni_Donate system, 
 Alumni website is created for the students that have graduated from the Institution. This is a web based application that allows former students to take advantage of the benefits and services that the Institution offers after graduation and also give them a platform of giving back to the institution in the form of Donations. As it is well known that the Alumni body is an important asset in the development of any modern day institution.
