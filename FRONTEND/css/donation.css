@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Open+Sans:wght@300&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -6,6 +7,7 @@
 body {
     background-color: #ffddb4;
     margin-left: 70px;
+    font-family: 'Big Shoulders Display', 'cursive';
 }
 .container-one {
     display: flex;
@@ -24,10 +26,10 @@ body {
     width: 100%;
 }
 .wrapper-two h1 {
-    max-width: 38%;
+    width: 38%;
     color: black;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 70px;
     padding: 8px;
     text-align: center;
     background-color: #a4bff1;
@@ -35,10 +37,10 @@ body {
     border-radius: 10px;
 }
 .wrapper-two h2 {
-    max-width: 18%;
+    max-width: 28%;
     color: black;
     font-weight: 800;
-    font-size: 33px;
+    font-size: 63px;
     padding: 3px;
     text-align: center;
     background-color: #a4bff1;
@@ -80,4 +82,16 @@ body {
 .wrapper-four button a {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    body, .wrapper-two h2,.wrapper-two h1 {
+        font-size:15px;
+    }
+    .wrapper-two h1 {
+        width: 20%;
+    }
+    .wrapper-two h2 {
+        width: 15%;
+    }
 }
