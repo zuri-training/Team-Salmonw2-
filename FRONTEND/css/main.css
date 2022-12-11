@@ -1,0 +1,516 @@
+body {
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #7AADF8;
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  overflow-x: hidden;
+  left: 0;
+  z-index: 1;
+  padding: 20px;  
+  
+} 
+
+nav div {
+  margin-top: 1rem;
+}
+
+nav .navigations {
+  margin: 100px 0 150px 0;
+}
+
+.navigations a {
+  text-decoration: none;
+  color: black;
+  margin-left: .4rem;
+  width: 300px;
+  height: 70px;
+}
+
+.navigations .div {
+  display:flex;
+  
+}
+
+.div div {
+  margin:0 4px;
+  /* background: white; */
+  height: 25px;
+  padding: 6px 2px 0 0;
+  width: 80px;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.div i {
+  margin:0 4px;
+  /* background: white; */
+  padding: 6px 0 0 0;
+  font-size: .7rem;
+}
+
+
+.div div:hover, .active {
+  background-color: white;
+}
+
+.navigations a:hover, .navigations .active {
+  background-color: white;
+  width: 5rem;
+}
+.container {
+  background-color: #FFD0B4; 
+  margin-left: 100px;
+  padding: 1rem;
+  padding-left: 4rem;
+}
+
+main .logo {
+  justify-content: center;
+  align-content: center;
+}
+
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 50%;
+}
+
+.headersection {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  color: white;
+}
+
+.headersection h1 {
+  padding: .6rem;
+  margin: 0;
+  background-color:  #035ee6b4;
+}
+
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  
+}
+
+.imgcontainer img {
+  width: 100%;
+  margin-top:1rem ;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  width: 200px;
+  font-size: 19px;
+  top: 8px;
+  right: 16px;
+  margin: 1rem;
+}
+
+.donate {
+  text-align: center;
+  background-color:  #035ee6b4;
+  width:100px;
+  padding: .6rem 1rem;
+  margin: 1rem auto;
+}
+
+.donate a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+
+}
+.donationcontainer {
+  background-color: #FFB98E;
+  padding: 1rem;
+}
+
+.history {
+  display: flex;
+  justify-content: space-around;
+    background-color:  #035ee6b4;
+    margin-bottom: 1rem;
+
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+   background-color:  #035ee6b4;
+   padding: 0 .8rem;
+}
+
+footer {
+  margin-top: 2rem;
+   background-color: #FFB98E;
+   padding: 1rem .5rem;
+
+}
+.footercontainer {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+.socialflex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.fa-facebook {
+  color: rgb(5, 5, 156);
+  font-size: 2rem;
+}
+.fa-twitter {
+  color: white;
+  font-size: 2rem;
+  background-color: rgb(4, 174, 212);
+  width: 40px;
+  border-radius: 15px;
+}
+.fa-youtube {
+  color: red;
+  font-size: 2rem;
+  width: 50px;
+  border-radius: 50%;
+}
+.contact  h3 {
+  font-size: .9rem;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+
+}
+.socials img {
+  width: 2rem
+
+}
+
+.socialflex h2 {
+  margin: 0 auto;
+}
+.contact {
+  text-align: left;padding-left: 1rem;
+}
+
+.nbsp {
+
+  font-size: .9rem;
+}
+
+
+span.nbsp2 {
+margin: 10rem 0;
+ color: red;
+}
+
+.flex b {
+  margin-left: .6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .headersection h1 {
+  padding: .2rem;
+  margin: 0;
+  font-size: 20px;
+}
+}
+
+
+
+
+/* FUNDRAISER SECTION STYLING */
+body {
+  background-color: #FFD0B4; 
+  height: 100vh;
+}
+.headersection h2 {
+  background-color:  #035ee6b4;
+  width: fit-content;
+  margin: .6rem auto;
+  padding: .4rem;
+}
+
+.formgroup label, .formgroup input {
+  display: block;
+  margin: .3rem 6rem;
+  text-transform: capitalize;
+}
+
+.buttongroup {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.buttongroup button {
+  background-color:  #035ee6b4;
+  outline: none;
+  border: none;
+  width: 100px;
+  margin: 0 1rem;
+  padding: 1rem;
+  cursor: pointer;
+
+}
+
+.fundraiserlink label {
+  display: block;
+  margin: .3rem 6rem;
+  text-transform: capitalize;
+}
+.fundraiserlink input {
+  margin: .3rem 6rem;
+  text-transform: capitalize;
+}
+
+.fundraiserlink label {
+  display: block;
+  margin: .3rem 6rem;
+  text-transform: capitalize;
+}
+
+.barcode i {
+  margin: .3rem 6rem;
+  text-transform: capitalize;
+  font-size: 9rem;
+}
+
+.barcode button {
+  position: relative;
+  bottom: 3rem;
+  text-transform: capitalize;
+  background-color: #035ee6b4;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.socialmedia h4 {
+  text-align: center;
+  text-transform: capitalize;
+  
+}
+
+.socialmedia .socials {
+  text-align: right;
+  margin-right: 2rem;
+
+}
+
+.socials img {
+  width: 4rem;
+}
+
+.fundcontainer input {
+width: 20rem;
+height: 3rem;
+outline: none;
+border: none;
+}
+
+
+
+/* ABOUT STYLING */
+
+.maintext {
+  background-color: #FFB98E;
+  padding: .8rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.abouttext {
+  background-color: #FFB98E;
+  padding: .8rem;
+  font-size: 1.2rem;
+  margin: 1rem ;
+  border-radius: 1rem;
+  width: 100%;
+
+  
+}
+
+.aboutdonation {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+.aboutdonation img {
+  margin: 1rem;
+  width: 100%;
+}
+
+.purpose {
+  width: 30rem;
+  margin: auto;
+  background-color: #FFB98E;
+  padding: 2rem;
+  border-radius: 1rem;
+
+
+}
+
+.vmo {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.mission h3, .vision h3, .objective h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mission, .vision, .objective {
+  padding: 1rem;
+ background: #FFB98E;
+ border-radius: 1rem;
+
+}
+
+.newsletter {
+padding: .1rem;
+ background: #FFB98E;
+ border-radius: 1rem;
+ margin: 1rem 1rem 1rem 2rem;
+}
+
+.newsletter a {
+  color: #0762ea;
+}
+
+.newsletter p {
+  margin-left: 1rem;
+}
+
+.members img {
+  width: 80px;
+}
+
+.teamates {
+  display: grid;
+  grid-template-columns:  repeat(4, auto);
+  gap: 1rem;
+  padding: 1rem;
+ margin: 1rem 1rem 1rem 2rem;
+
+}
+
+.members {
+  background-color: #FFB98E;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+.members p {
+  margin: 0;
+}
+
+/* Media Query for About section */
+
+@media only screen and (min-width: 900px) {
+ .aboutcontainer {
+  padding: 0 4rem;
+ }
+ 
+ 
+  .abouttext {
+  background-color: #FFB98E;
+  padding: .8rem;
+  font-size: 1.2rem;
+  margin: auto ;
+  border-radius: 1rem;
+  width: 400px;
+  grid-column: 1/3;
+
+  
+}
+
+.aboutdonation {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 3rem;
+  padding: 1rem 4rem;
+
+}
+
+.aboutimage {
+  width: 400px;
+}
+.aboutdonation img {
+  /* margin: 1rem; */
+  grid-column: 3/4;
+ 
+}
+
+.purpose {
+  margin: 0rem auto;
+  width:700px;
+}
+
+.maintext, .maincontent {
+  margin: 0;
+}
+
+  .maintex img {
+    margin: 0;
+}
+}
+
+footer {
+  padding: 4rem;
+    font-size: 1.2rem;
+    font-weight: ;
+}
+footer h2 {
+  text-transform: uppercase;
+
+}
+
+
+
