@@ -199,12 +199,14 @@ footer a {
 
 }
 .socials img {
-  width: 2rem
+  width: 1.5rem;
+  border-radius: 0;
 
 }
 
 .socialflex h2 {
   margin: 0 auto;
+  background-color: transparent;
 }
 .contact {
   text-align: left;padding-left: 1rem;
@@ -213,12 +215,6 @@ footer a {
 .nbsp {
 
   font-size: .9rem;
-}
-
-
-span.nbsp2 {
-margin: 10rem 0;
- color: red;
 }
 
 .flex b {
@@ -241,15 +237,8 @@ margin: 10rem 0;
 
 
 
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 800px) {
+  
   .headersection h1 {
   padding: .2rem;
   margin: 0;
@@ -505,7 +494,6 @@ padding: .1rem;
 footer {
   padding: 4rem;
     font-size: 1.2rem;
-    font-weight: ;
 }
 footer h2 {
   text-transform: uppercase;
