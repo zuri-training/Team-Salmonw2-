@@ -1,0 +1,42 @@
+body {
+  background-color: #ffd0b4;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  width: 95%;
+}
+
+.contentbox1 {
+  float: left;
+}
+
+.contentbox2 {
+  float: left;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+h2 {
+  background-color: #afbdd0;
+  text-align: center;
+  padding: 10px 15px 10px 10px;
+  border-radius: 10px;
+}
+
+.check {
+  margin: 0 auto;
+  text-align: center;
+  color: #3bcc2f;
+  font-size: 80px;
+}
+
+p {
+  text-align: center;
+}

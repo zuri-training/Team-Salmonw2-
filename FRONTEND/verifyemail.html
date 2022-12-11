@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Email</title>
+    <link rel="stylesheet" href="verify_email.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box1">
+        <div class="inner1">
+          <img src="SAVE_20221208_141106.png" alt="LOGO" />
+        </div>
+
+        <div class="inner2"><h2>Verify Email</h2></div>
+      </div>
+      <form action="v_successful.html">
+        <div class="box2">
+          <p>
+            Your account with Global Alumni Foundation is almost ready and a
+            verification <br />code has been sent to your email address.
+          </p>
+        </div>
+
+        <div class="code">
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+        </div>
+        <div class="btt">
+          <a href="v_successful.html"
+            ><button type="submit" id="verify">Verify</button></a
+          >
+        </div>
+      </form>
+
+      <div class="box3">
+        <p>Still haven't received the code?</p>
+        <button type="button" id="resend"><a href="#">Resend code</a></button>
+      </div>
+    </main>
+    <script src="verify_email.js"></script>
+  </body>
+</html>
