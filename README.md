@@ -4,7 +4,6 @@ Alumni Donate Platform
 
 ## Project Description
 
-teting synch
 
 
 "We present a design and open source implementation for an Alumni_Donate system, 
