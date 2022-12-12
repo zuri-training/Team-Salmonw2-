@@ -1,5 +1,46 @@
 body {
   margin: 0;
+  font-family: 'Anybody';
+}
+
+h1,h2,h3,h4,h5,h6 {
+ font-family: 'Passion One', cursive;   
+}
+
+nav{
+display: grid;
+grid-template-columns: repeat(5, auto);
+font-weight: 700;
+background-color: #304F7C;
+
+
+}
+
+nav a {
+    margin: auto;
+    cursor: pointer;
+    width: 80px;
+    padding:.5rem;
+    padding: 1rem;
+  font-size: .9em;
+  text-decoration: none;
+  color: black;
+
+}
+/* 
+width: 100%;
+height: 4rem;
+background: #7AADF8; */
+
+.nav a:hover, .active{
+background-color: black !important;
+color: white;
+}
+
+.logo{
+    width:3rem;
+    margin: auto 1rem;
+    background: none;
 }
 
 .sidebar {
@@ -19,6 +60,8 @@ nav div {
   margin-top: 1rem;
 }
 
+
+
 nav .navigations {
   margin: 100px 0 150px 0;
 }
@@ -29,6 +72,7 @@ nav .navigations {
   margin-left: .4rem;
   width: 300px;
   height: 70px;
+  
 }
 
 .navigations .div {
@@ -38,7 +82,6 @@ nav .navigations {
 
 .div div {
   margin:0 4px;
-  /* background: white; */
   height: 25px;
   padding: 6px 2px 0 0;
   width: 80px;
@@ -48,7 +91,6 @@ nav .navigations {
 
 .div i {
   margin:0 4px;
-  /* background: white; */
   padding: 6px 0 0 0;
   font-size: .7rem;
 }
@@ -210,11 +252,6 @@ footer a {
 }
 .contact {
   text-align: left;padding-left: 1rem;
-}
-
-.nbsp {
-
-  font-size: .9rem;
 }
 
 .flex b {
