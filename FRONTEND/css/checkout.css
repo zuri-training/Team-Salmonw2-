@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab&display=swap');
 * {
     padding: 0px;
     margin: 0px;
-    border: 0px;
+    box-sizing: border-box;
 }
 body {
-    background-color: #ffddb4;
-    font-family: 'Big Shoulders Display', 'cursive';
-    font-weight: 800;
+    background-color: #fff;
+    font-family: 'Poppins', ' sans-serif';
+    font-weight: 600;
 }
 header, main {
-    background-color: #ffddb4;
+    background-color: #fff;
     margin-left: 100px;
 }
 .container-one {
@@ -30,9 +30,9 @@ header, main {
     width: 100%;
 }
 .wrapper-two h1 {
-    max-width: 38%;
+    width: 38%;
     color: black;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 30px;
     padding: 8px;
     text-align: center;
@@ -43,27 +43,28 @@ header, main {
 .wrapper-two h2 {
     width: 11%;
     color: black;
-    font-weight: 800;
-    font-size: 23px;
+    font-weight: 600;
+    font-size: 25px;
     padding: 3px;
     text-align: center;
     background-color: #fff;
     border: 2px solid #fff;
-    border-radius: 10px;
 }
 .mini-wrapper {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .mini-wrapper img {
     border-radius: 45%;
 }
 .container-two {
     margin-top: 20px;
+    margin-left: 15%;
+    margin-bottom: 8%;
 
 }
 .wrapper-three form label {
-    font-size: 27px;
+    font-size: 20px;
     padding-bottom: 25%;
     margin-bottom: 10%;
     font-weight: 400;
@@ -73,7 +74,12 @@ header, main {
     padding: 15px;
     margin:10px 0px;
     border-radius: 10px;
-    width: 40%;
+    width: 30%;
+    background-color: #e5e5e5;
+    border:2px solid #e5e5e5;
+}
+.wrapper-three form input:focus {
+    background-color: #e5e5e5;
 }
 .wrapper-four form {
     margin-top: 15px;
@@ -81,14 +87,18 @@ header, main {
 .wrapper-four button {
     padding:7px;
     border-radius: 3px;
-    background-color: rgb(77, 77, 152);
+    background-color: #0a66c2;
+    border-color: #0a66c2;
+}
+.wrapper-four button:hover, .wrapper-four button a:hover {
+    background-color: #0a66c2;
 }
 .wrapper-four button a {
     text-decoration: none;
     color: white;
 }
 footer {
-    background-color: #ffb98e;
+    background-color: #0a66c2;
 }
 .wrapper-five {
     display: flex;
@@ -152,13 +162,59 @@ footer {
     font-weight: 400;
     margin-bottom: 3px;
 }
-@media only screen and (max-width: 450px) {
+
+@media only screen and (min-width: 950px) {
+    body, .wrapper-two h2,.wrapper-two h1 {
+        font-size:20px;
+    }
+    .wrapper-two h1 {
+        width: 60%;
+    }
+    .wrapper-two h2 {
+        width: 32%;
+    }
+    .wrapper-three form input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    body, .wrapper-two h2,.wrapper-two h1 {
+        font-size:15px;
+    }
+    .wrapper-two h1 {
+        width: 75%;
+    }
+    .wrapper-two h2 {
+        width: 37%;
+    }
     .wrapper-five {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         margin-top: 5px;
-        margin-left: 7px;    
+        font-size: 15px;
+    }
+    .column-two, .column-three {
+        margin-left: 20px;
+    }   
 }
+@media only screen and (max-width: 469px)  {
+    body, .wrapper-two h2,.wrapper-two h1 {
+        font-size:20px;
+    }
+    .wrapper-two h1 {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .wrapper-two h2 {
+        width: 100%;
+        font-size: 11px;
+        font-weight: 700;
+    }
+    .wrapper-three form input {
+        width: 65%;
+    }
 }
