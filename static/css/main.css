@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color:#E5E5E5;
+  margin: 0;
+  padding:0 4rem;
+
+}
+
+nav{
+display: grid;
+grid-template-columns: repeat(5, auto);
+font-weight: 700;
+}
+
+nav a {
+    margin: auto;
+    cursor: pointer;
+    width: 80px;
+  font-size: .9em;
+  text-decoration: none;
+  color: black;
+
+}
+
+hr {
+  margin-top: 8rem;
+
+}
+
+.logo{
+    width:3rem;
+    margin: auto;
+    background: none;
+}
+
+.sidebar {
+  background-color: #0a66c2b5;
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  overflow-x: hidden;
+  left: 0;
+  z-index: 1;
+  padding: 20px;  
+  
+} 
+
+nav div {
+  margin-top: 1rem;
+}
+
+
+
+nav .navigations {
+}
+
+.navigations a {
+  text-decoration: none;
+  color: black;  
+}
+
+.navigations .div {
+  display:flex;
+  
+}
+
+.div div {
+  margin:0 4px;
+  height: 25px;
+  padding: 6px 2px 0 0;
+  width: 80px;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.div i {
+  margin:0 4px;
+  padding: 6px 0 0 0;
+  font-size: .7rem;
+}
+
+
+.div div:hover, .active {
+  background-color: white;
+}
+
+.navigations a:hover, .navigations .active {
+  background-color: white;
+  width: 5rem;
+}
+.container {
+  background-color:white; 
+  margin-left: 100px;
+}
+
+
+.logo img {
+  width: 12rem;
+}
+
+.imgcontainer{
+    position: relative;
+    width: 100%;
+    height:550px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.imgtext{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+ 
+}
+
+.imgtext a{
+   color: #FFFFFF;
+    cursor: pointer;
+    padding:.5rem 1rem;
+   background: #0A66C2;
+   border: 1px solid blue;
+   margin-right: 1rem;
+   text-decoration: none;
+}
+h2 {
+  margin: 0;
+  color: black;
+}
+
+
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white; 
+}
+
+.donationcontainer {
+ background-color: #0a66c2b5;;
+  padding: 1rem;
+}
+
+.history {
+  display: flex;
+  justify-content: space-around;
+    background-color:  white;;
+    margin-bottom: 1rem;
+
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+   background-color:  white;
+   padding: 0 .8rem;
+}
+footer {
+  margin-top: 0;
+   background-color: #0A66C2;
+   padding: 1rem .5rem;
+   color: white;
+
+}
+.footercontainer {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+.socialflex {
+  display: grid;
+  margin-right: 1rem;
+
+
+}
+
+.socials {
+  margin-right: 2rem;
+  width: 15%;
+display: grid;
+grid-template-columns: repeat(3,auto);
+
+}
+.contact  h3 {
+  font-size: .9rem;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+
+}
+.socials img {
+  width: 1.5rem;
+  border-radius: 0;
+
+}
+
+.socialflex h2 {
+  margin: 0 auto;
+  background-color: transparent;
+}
+.contact {
+  text-align: left;padding-left: 1rem;
+}
+
+

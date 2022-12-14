@@ -1,0 +1,23 @@
+{% load static %}
+<nav>
+    <div class="logopack">
+        <img src="{% static 'images/logo.png' %}" alt="logo" class="logo">
+        <span class="globalnav">Global Alumni Foundation
+        </span>
+    </div>
+
+    <a href="/" class=" contact"> Home</a>
+    <a href="{% url 'contact' %}" class=" contact"> Contact Us</a>
+    <a class="about1" href="{% url 'about' %}"> About Us</a>
+    <div class="sign">
+
+        {% if request.user.is_authenticated %}
+        <a class="sign-up" href="">{{request.user.username}}</a>
+        {% else %}
+        <a class="sign-up" href="{% url 'login' %}"> Sign In</a>
+        <a class="sign-up1" href="{% url 'register' %}"> Sign Up</a>
+        {% endif %}
+
+
+    </div>
+</nav>

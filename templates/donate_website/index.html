@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="header">
+    <div id="head">
+      <div class="head-text">
+        <h2>About Global Alumni Foundation </h2>
+        <p id="info">As a graduate you becopme a part of the student alumni associationfor your
+          university.Amn alummnim association brings formal student together tomaintain a connection
+          with their university and fellow ghraduates.Its also an avenue to help current students
+          copmple their students</p>
+        <div class="smallbtn">
+          <span><a class="aboutus" href="./about.html">About Us</a></span>
+          <span><a class="donatenow" href="{% url 'donate' %}"> Donate</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerfluid">
+    <div id="div">
+      <div class="desc-1">
+        <div class="text">
+  
+          <p> Alumni donations are used specifically to help current students. These alumni-funded
+            scholarships help
+            more students get access to a high-quality education. Unique and meaningful programs.
+          </p>
+  
+          <a class="readmore" href="./about.html"> Read More</a>
+        </div>
+        <img src="{% static 'images/aboutdonation.png' %}" alt="About donation">
+      </div>
+      <hr>
+      <div class="sub-div">
+        <div class="aim">
+          <h3>VISION</h3>
+          <p>To make Global Alumni Foundation the go to platform of the 21st century that connects
+            Alumni to their
+            university and fellow graduate.</p>
+        </div>
+  
+        <div class="aim">
+          <h3>MISSION</h3>
+          <p>To provide a secure way to raise funds for colleges and universities as well as to
+            connect past Alumni to
+            their institution.</p>
+        </div>
+        <div class="aim">
+          <h3>OBJECTIVE</h3>
+          <p>Help colleges and university to raise funds to improve the school.</p>
+          <p>Provide scholarship to needy students so they do not drop out of school.</p>
+        </div>
+      </div>
+      <div class="comment">keep in touch with all the happenings and latest information on Global Alumni
+        Foundation by
+        subscribing to our <span><a class="newsletter" href="."> Newsletter</a></span></div>
+    </div>
+    <div class="eventscontainer">
+      <div class="upcoming">Upcoming Events</div>
+      <div class="eventcards">
+        <div class="card">
+          <p class="eventhead">Alumni Dinner</p>
+          <p class="eventdate">
+            Fri, 16th December, 2022 <br>
+            06:00 GMT +1
+          </p>
+          <a href="#" class="viewmore">View More</a>
+  
+        </div>
+  
+        <div class="card">
+          <p class="eventhead">Alumni Dinner</p>
+          <p class="eventdate">
+            Fri, 16th December, 2022 <br>
+            06:00 GMT +1
+          </p>
+          <a href="#" class="viewmore">View More</a>
+  
+        </div>
+  
+        <div class="card">
+          <p class="eventhead">Alumni Dinner</p>
+          <p class="eventdate">
+            Fri, 16th December, 2022 <br>
+            06:00 GMT +1
+          </p>
+          <a href="#" class="viewmore">View More</a>
+  
+        </div>
+  
+        <div class="card">
+          <p class="eventhead">Alumni Dinner</p>
+          <p class="eventdate">
+            Fri, 16th December, 2022 <br>
+            06:00 GMT +1
+          </p>
+          <a href="#" class="viewmore">View More</a>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+  
