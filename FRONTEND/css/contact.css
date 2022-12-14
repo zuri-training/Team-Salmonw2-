@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffd084;
+}
+
+#container{
+    text-align: center;
+}
+
+#unauth{
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: 27px;
+    width: 752px;
+    height: 100px;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    background-color: #afbbdd;
+    color: black;
+    border: 50px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+h2{
+    background-color: #afbbdd;
+    margin-top: 20px;
+    padding: 15px;
+    border: 50px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+.grid_container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2 1fr);
+}
+
+.grid_container1{
+    text-align: left;
+    grid-column: 1 /2;
+    grid-row: 1 /2;
+}
+
+.grid_container2{
+    text-align: left;
+    grid-column: 1 /2;
+    grid-row: 2 /3;
+}
+
+.grid_container3{
+    grid-column: 2 /3;
+    grid-row: 2 /3;
+}
+
+.grid_container i{
+    margin-top: 55px;
+}
+
+#map{
+    padding: 10px;
+}
+
+#phone{
+    padding: 10px;
+}
+
+.social_icon{
+    margin-top: 35px;
+    padding: 30px;
+}
+
+#facebook{
+    color: blue;
+    padding: 10px;
+}
+
+#twitter{
+   color: skyblue;
+   padding: 10px;
+}
+
+#youtube{
+    color: red;
+    padding: 10px;
+}
+.btn{
+    margin: 50px;
+    width: 185px;
+    height: 73px;
+    background-color: #304f7c;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+}
+.btn:visited{
+    background-color: cornflowerblue;
+}
