@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffd084;
+}
+
+#container{
+    text-align: center;
+}
+
+#unauth{
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    width: 752px;
+    height: 100px;
+}
+
+h1{
+    text-transform: uppercase;
+    background-color: #afbbdd;
+    color: black;
+    border: 50px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.unauth_msg{
+    width: 708px;
+    height: 141px;
+    margin: 39px; 
+}
+
+h4{
+    background-color: #d9d9d9;
+    margin-top: 50px;
+    padding: 10px;
+    border-color: red;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+i{
+    color: red;
+}
+
+.btn{
+    margin: 50px;
+    width: 185px;
+    height: 73px;
+    background-color: #304f7c;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+}
+.btn:visited{
+    background-color: cornflowerblue;
+}
