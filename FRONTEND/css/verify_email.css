@@ -1,6 +1,6 @@
 body {
-  background-color: #ffd0b4;
   margin: 10px;
+  background-color: white;
 }
 
 main {
@@ -22,8 +22,12 @@ main {
 
 h2 {
   padding: 10px;
-  background-color: #afbdd0;
   border-radius: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -47,7 +51,7 @@ img {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #304f7c;
+  background-color: #0a66c2;
   color: #ffffff;
 }
 
@@ -80,13 +84,12 @@ input {
 
 a {
   text-decoration: none;
-  color: #153289;
+  color: #ff8a43;
 }
 
 #resend {
   margin: 10px;
   border-radius: 5px;
-  color: #3b5b89;
-  border-color: #3b5b89;
-  background-color: #ffd0b4;
+  border-color: #ff8a43;
+  background-color: white;
 }
