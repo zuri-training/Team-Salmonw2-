@@ -1,84 +1,83 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 body,
 html {
-background-color: #ffffff;
-width: 100%;
-height: 100%;
-margin: auto;
-color: black;
-font-family: "Roboto slab", "poppins";
-font-size: 14px;
+  background-color: #ffd0b4;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  color: black;
+  font-family: anybody;
+  font-size: 14px;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 20%;
-  width: 55vw;
-  padding: auto;
-}
-img {
-  height: 150px;
-  width: 200px;
-  border-radius: 50%;
-}
-.txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: 55vw;
+    padding: auto;
+  }
+  img {
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+  }
+  .txt {
+    height: auto;
+    width: auto;
+    font-weight: 800;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color: #afbbdd;
+  }
+  .container {
+    height: auto;
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    border-radius: 0px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: 0 0 40px rgba (8, 7, 16, 0.6);
+  }
+  form label {
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    caret-color: skyblue;
+    width: 20vw;
+    padding: 10px;
+    margin: 5px, 0, 20px, 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px black;
+    border-radius: 5px;
+  }
+  label {
+    display: inline-block;
+  }
+  button{
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #041135;
   height: auto;
   width: auto;
-  font-weight: 800;
-  border: 0px;
-  border-radius: 10px;
-  font-size: 30px;
-  text-align: center;
-  padding: 15px;
-}
-.container {
-  height: auto;
-  width: 40%;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: left;
-  border-radius: 0px;
-  padding: 20px;
-  border: 0px;
-  box-shadow: 0 0 40px rgba (8, 7, 16, 0.6);
-}
-form label {
-  font-family: poppins;
-  font-weight: 500;
-  font-size: 14px;
-  position: relative;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"] {
-  caret-color: skyblue;
-  width: 20vw;
+  border-radius: 5px;
   padding: 10px;
-  margin: 5px, 0, 20px, 0;
+  margin-right: 60%;
+  margin-left: 60%;
   display: inline-block;
   border: none;
-  background-color: #e5e5e5;
-  border-bottom: 1px black;
-  border-radius: 5px;
-}
-label {
-  display: inline-block;
-}
-button{
-font-size: 14px;
-cursor: pointer;
-background-color: #0a66c2;
-height: auto;
-width: auto;
-border-radius: 5px;
-padding: 10px;
-margin-right: 60%;
-margin-left: 60%;
-display: inline-block;
-border: none;
-color: white;
-}
+  color: white;
+  }
