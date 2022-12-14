@@ -1,29 +1,61 @@
+/* Copy from  here to  add header to  your  pages */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab&display=swap');
+
 body{
-    margin: 0;
-   font-family: 'Anybody';
-   background-color:#ffd0b486;
+  font-family: 'Poppins', sans-serif;
+  background-color:#E5E5E5;
+  margin: 0;
+  padding:0 4rem;
 
 }
 
+main {
+  background-color: white;
+}
 h1,h2,h3,h4,h5,h6 {
- font-family: 'Passion One', cursive;   
+ font-family: 'Roboto Slab', serif;   
 }
 nav{
 display: grid;
 grid-template-columns: repeat(5, auto);
 font-weight: 700;
-background-color: #304F7C;
-
-
+background-color: #0A66C2;
+padding: .5rem 0;
+color: #fff;
+margin: 0;
 }
 
+.logopack
+{
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: 'logopack';
+}
+
+.logo{
+    width:6rem;
+    margin:0 ;
+    background: none;
+    padding: 0;
+}
+
+.globalnav {
+    margin: auto 2rem auto 0;
+}
 nav a {
     margin: auto;
     cursor: pointer;
     width: 80px;
     padding:.5rem;
-    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+  
   font-size: .9em;
+color: white;
+
 
 }
 /* 
@@ -32,15 +64,37 @@ height: 4rem;
 background: #7AADF8; */
 
 nav a:hover, .active{
-background-color: black;
-color: white;
+background-color: aliceblue;
+color: steelblue;
+
 }
 
-.logo{
-    width:3rem;
-    margin: auto 1rem;
-    background: none;
+
+.sign {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 6rem;
 }
+
+.sign-up {
+  border:1px solid #EA4335;
+  text-align: center;padding:.1rem 0;
+  font-size: .9rem;
+  text-decoration: none;
+  
+
+}
+.sign-up1 {
+  border:1px solid #EA4335;
+  text-align: center;padding:.1rem 0;
+  font-size: .9rem;
+  margin-left: 1rem;
+  margin-right: 0;
+
+}
+
+/* Stop here for navbar */
 
 .header{
     position: relative;
@@ -59,57 +113,72 @@ color: white;
     display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  width: 60%;
+  justify-content: start;
+  align-items:flex-start;
+  color: white;padding-left: 3rem;
 }
-h1{
-    /* margin-top: 362px; */
-    font-weight: 600;
-    font-size: 80px;
-    line-height: 83px;
+h2 {
+  margin-top: 10rem;
+  font-size: 30px;
 }
+  
 #info{
-   font-weight: 10;
-   font-size: 40.8244px;
-   line-height: 55px;
+   font-weight:300;
+   /* margin: 0 3rem; */
 }
-.head-text a{
-   font-size: 36px;
+.head-text .aboutus{
    color: #FFFFFF;
     cursor: pointer;
-    padding:.5rem;
-    padding: 1rem 2rem;
-   background: #304F7C;
-   border-radius:10px;
-   border: none;
+    padding:.5rem 1rem;
+   background: #0A66C2;
+   border: 1px solid blue;
+   margin-right: 1rem;
+   text-decoration: none;
 }
+
+.head-text .donatenow{
+   color: #EA4335;
+    cursor: pointer;
+    padding:.5rem 1.2rem;
+   background: #fff;
+   border: 1px solid #EA4335;
+   text-decoration: none;
+   
+}
+
 
 .desc-1 {
   display: grid;
   grid-template-columns: repeat(2,auto) ;
+  grid-template-areas: "img text";
   gap: 1rem;
-  margin: 1rem auto;
-  padding: 1rem;
+  margin: 2rem auto;
   text-align: center;
+}
+
+.containerfluid {
+ padding: 0 2rem;
 }
 
 .desc-1 img {
   width: 100%;
+  grid-area: img;
 }
 
 .desc-1 .text {
-  background-color: #FFD0B4;
   border-radius: 10px;
+  grid-area: text;
+  margin: auto;
 }
-
- .desc-2{
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
- background-color: #FFD0B4;
-  border-radius: 10px;
+.desc-1 .readmore{
+   color: #FFFFFF;
+    cursor: pointer;
+    padding:.5rem 1rem;
+   background: #0A66C2;
+   border: 1px solid blue;
+   margin-right: 1rem;
+     border-radius:5px; 
 }
 
 .sub-div {
@@ -117,36 +186,84 @@ h1{
    grid-template-columns: auto auto auto;
    gap: 1rem;
    text-align: center;
+   margin-top: 2rem;
 
 }
 
 .sub-div .aim {
-    background-color: #FFD0B4;
-    padding: 1rem;
+    background-color:#FF8A43;
     border-radius: 10px;
 }
 
 .comment {
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
-background: #7AADF8;
+text-align: center;
+margin: 2rem 0;
+padding-bottom: 1rem;
+box-shadow: 0px 3px 3px gray;
 border-radius: 10px;
+ 
 }  
 
-a {
+.newsletter {
     text-decoration: none;
-    color: black;
+    color: #FF8A43;
 }
 
 
 button a:hover {
     color: white;
 }
+ .eventscontainer {
+  padding-bottom: 3rem; 
+  margin-bottom: 0;
+ }
+
+
+
+
+.upcoming {
+  background-color: #0A66C2;
+  width: fit-content;
+  padding:.5rem 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.eventcards {
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  gap: 1rem;
+}
+
+.card {
+  background-color: #E5E5E5;
+  text-align: center;
+}
+
+.eventhead {
+  color: #0A66C2;
+  margin-bottom: 0;
+}
+.eventdate {
+  font-weight: bold;
+  margin-top: 0;
+}
+.viewmore {
+  text-decoration: none;
+  color: #0A66C2;
+  display: flex;
+  justify-content:end;
+  padding-right: 4rem;
+
+}
+
+
+/* Start here for footer */
 footer {
-  margin-top: 2rem;
-   background-color: #FFB98E;
+  margin-top: 0;
+   background-color: #0A66C2;
    padding: 1rem .5rem;
+   color: white;
 
 }
 .footercontainer {
@@ -155,27 +272,18 @@ footer {
   text-align: center;
 }
 .socialflex {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  margin-right: 1rem;
+
 
 }
 
-.fa-facebook {
-  color: rgb(5, 5, 156);
-  font-size: 2rem;
-}
-.fa-twitter {
-  color: white;
-  font-size: 2rem;
-  background-color: rgb(4, 174, 212);
-  width: 40px;
-  border-radius: 15px;
-}
-.fa-youtube {
-  color: red;
-  font-size: 2rem;
-  width: 50px;
-  border-radius: 50%;
+.socials {
+  margin-right: 2rem;
+  width: 15%;
+display: grid;
+grid-template-columns: repeat(3,auto);
+
 }
 .contact  h3 {
   font-size: .9rem;
@@ -184,7 +292,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: white;
 
 }
 .socials img {
@@ -200,3 +308,5 @@ footer a {
 .contact {
   text-align: left;padding-left: 1rem;
 }
+
+/* End Here */

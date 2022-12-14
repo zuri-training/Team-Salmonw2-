@@ -1,50 +1,42 @@
-body {
-  margin: 0;
-  font-family: 'Anybody';
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab&display=swap');
 
-h1,h2,h3,h4,h5,h6 {
- font-family: 'Passion One', cursive;   
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color:#E5E5E5;
+  margin: 0;
+  padding:0 4rem;
+
 }
 
 nav{
 display: grid;
 grid-template-columns: repeat(5, auto);
 font-weight: 700;
-background-color: #304F7C;
-
-
 }
 
 nav a {
     margin: auto;
     cursor: pointer;
     width: 80px;
-    padding:.5rem;
-    padding: 1rem;
   font-size: .9em;
   text-decoration: none;
   color: black;
 
 }
-/* 
-width: 100%;
-height: 4rem;
-background: #7AADF8; */
 
-.nav a:hover, .active{
-background-color: black !important;
-color: white;
+hr {
+  margin-top: 8rem;
+
 }
 
 .logo{
     width:3rem;
-    margin: auto 1rem;
+    margin: auto;
     background: none;
 }
 
 .sidebar {
-  background-color: #7AADF8;
+  background-color: #0a66c2b5;
   position: fixed;
   height: 100%;
   width: 100px;
@@ -63,16 +55,11 @@ nav div {
 
 
 nav .navigations {
-  margin: 100px 0 150px 0;
 }
 
 .navigations a {
   text-decoration: none;
-  color: black;
-  margin-left: .4rem;
-  width: 300px;
-  height: 70px;
-  
+  color: black;  
 }
 
 .navigations .div {
@@ -105,86 +92,62 @@ nav .navigations {
   width: 5rem;
 }
 .container {
-  background-color: #FFD0B4; 
+  background-color:white; 
   margin-left: 100px;
-  padding: 1rem;
-  padding-left: 4rem;
 }
 
-main .logo {
-  justify-content: center;
-  align-content: center;
-}
 
 .logo img {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  position: relative;
+  width: 12rem;
+}
+
+.imgcontainer{
+    position: relative;
+    width: 100%;
+    height:550px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.imgtext{
+position: absolute;
+  top: 50%;
   left: 50%;
+  transform: translateX(-50%, -50%);
+ 
 }
 
-.headersection {
-  text-align: center;
-  width: fit-content;
-  margin: auto;
-  color: white;
+.imgtext a{
+   color: #FFFFFF;
+    cursor: pointer;
+    padding:.5rem 1rem;
+   background: #0A66C2;
+   border: 1px solid blue;
+   margin-right: 1rem;
+   text-decoration: none;
 }
-
-.headersection h1 {
-  padding: .6rem;
+h2 {
   margin: 0;
-  background-color:  #035ee6b4;
+  color: black;
 }
+
 
 .imgcontainer {
   position: relative;
   text-align: center;
-  color: white;
-
-  
+  color: white; 
 }
 
-.imgcontainer img {
-  width: 100%;
-  margin-top:1rem ;
-}
-
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  width: 200px;
-  font-size: 19px;
-  top: 8px;
-  right: 16px;
-  margin: 1rem;
-}
-
-.donate {
-  text-align: center;
-  background-color:  #035ee6b4;
-  width:100px;
-  padding: .6rem 1rem;
-  margin: 1rem auto;
-}
-
-.donate a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
-
-}
 .donationcontainer {
-  background-color: #FFB98E;
+ background-color: #0a66c2b5;;
   padding: 1rem;
 }
 
 .history {
   display: flex;
   justify-content: space-around;
-    background-color:  #035ee6b4;
+    background-color:  white;;
     margin-bottom: 1rem;
 
 }
@@ -192,14 +155,14 @@ main .logo {
 .total {
   display: flex;
   justify-content: space-between;
-   background-color:  #035ee6b4;
+   background-color:  white;
    padding: 0 .8rem;
 }
-
 footer {
-  margin-top: 2rem;
-   background-color: #FFB98E;
+  margin-top: 0;
+   background-color: #0A66C2;
    padding: 1rem .5rem;
+   color: white;
 
 }
 .footercontainer {
@@ -208,27 +171,18 @@ footer {
   text-align: center;
 }
 .socialflex {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  margin-right: 1rem;
+
 
 }
 
-.fa-facebook {
-  color: rgb(5, 5, 156);
-  font-size: 2rem;
-}
-.fa-twitter {
-  color: white;
-  font-size: 2rem;
-  background-color: rgb(4, 174, 212);
-  width: 40px;
-  border-radius: 15px;
-}
-.fa-youtube {
-  color: red;
-  font-size: 2rem;
-  width: 50px;
-  border-radius: 50%;
+.socials {
+  margin-right: 2rem;
+  width: 15%;
+display: grid;
+grid-template-columns: repeat(3,auto);
+
 }
 .contact  h3 {
   font-size: .9rem;
@@ -237,7 +191,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: white;
 
 }
 .socials img {
@@ -253,289 +207,5 @@ footer a {
 .contact {
   text-align: left;padding-left: 1rem;
 }
-
-.flex b {
-  margin-left: .6rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 800px) {
-  
-  .headersection h1 {
-  padding: .2rem;
-  margin: 0;
-  font-size: 20px;
-}
-}
-
-
-
-
-/* FUNDRAISER SECTION STYLING */
-body {
-  background-color: #FFD0B4; 
-  height: 100vh;
-}
-.headersection h2 {
-  background-color:  #035ee6b4;
-  width: fit-content;
-  margin: .6rem auto;
-  padding: .4rem;
-}
-
-.formgroup label, .formgroup input {
-  display: block;
-  margin: .3rem 6rem;
-  text-transform: capitalize;
-}
-
-.buttongroup {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-}
-
-.buttongroup button {
-  background-color:  #035ee6b4;
-  outline: none;
-  border: none;
-  width: 100px;
-  margin: 0 1rem;
-  padding: 1rem;
-  cursor: pointer;
-
-}
-
-.fundraiserlink label {
-  display: block;
-  margin: .3rem 6rem;
-  text-transform: capitalize;
-}
-.fundraiserlink input {
-  margin: .3rem 6rem;
-  text-transform: capitalize;
-}
-
-.fundraiserlink label {
-  display: block;
-  margin: .3rem 6rem;
-  text-transform: capitalize;
-}
-
-.barcode i {
-  margin: .3rem 6rem;
-  text-transform: capitalize;
-  font-size: 9rem;
-}
-
-.barcode button {
-  position: relative;
-  bottom: 3rem;
-  text-transform: capitalize;
-  background-color: #035ee6b4;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.socialmedia h4 {
-  text-align: center;
-  text-transform: capitalize;
-  
-}
-
-.socialmedia .socials {
-  text-align: right;
-  margin-right: 2rem;
-
-}
-
-.socials img {
-  width: 4rem;
-}
-
-.fundcontainer input {
-width: 20rem;
-height: 3rem;
-outline: none;
-border: none;
-}
-
-
-
-/* ABOUT STYLING */
-
-.maintext {
-  background-color: #FFB98E;
-  padding: .8rem;
-  font-size: 1.2rem;
-  margin: 1rem;
-}
-
-.abouttext {
-  background-color: #FFB98E;
-  padding: .8rem;
-  font-size: 1.2rem;
-  margin: 1rem ;
-  border-radius: 1rem;
-  width: 100%;
-
-  
-}
-
-.aboutdonation {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-    gap: 3rem;
-}
-
-.aboutdonation img {
-  margin: 1rem;
-  width: 100%;
-}
-
-.purpose {
-  width: 30rem;
-  margin: auto;
-  background-color: #FFB98E;
-  padding: 2rem;
-  border-radius: 1rem;
-
-
-}
-
-.vmo {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 1rem;
-  margin: 1rem 1rem 1rem 2rem;
-}
-
-.mission h3, .vision h3, .objective h3 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.mission, .vision, .objective {
-  padding: 1rem;
- background: #FFB98E;
- border-radius: 1rem;
-
-}
-
-.newsletter {
-padding: .1rem;
- background: #FFB98E;
- border-radius: 1rem;
- margin: 1rem 1rem 1rem 2rem;
-}
-
-.newsletter a {
-  color: #0762ea;
-}
-
-.newsletter p {
-  margin-left: 1rem;
-}
-
-.members img {
-  width: 80px;
-}
-
-.teamates {
-  display: grid;
-  grid-template-columns:  repeat(4, auto);
-  gap: 1rem;
-  padding: 1rem;
- margin: 1rem 1rem 1rem 2rem;
-
-}
-
-.members {
-  background-color: #FFB98E;
-  text-align: center;
-  padding: 1rem;
-
-}
-
-.members p {
-  margin: 0;
-}
-
-/* Media Query for About section */
-
-@media only screen and (min-width: 900px) {
- .aboutcontainer {
-  padding: 0 4rem;
- }
- 
- 
-  .abouttext {
-  background-color: #FFB98E;
-  padding: .8rem;
-  font-size: 1.2rem;
-  margin: auto ;
-  border-radius: 1rem;
-  width: 400px;
-  grid-column: 1/3;
-
-  
-}
-
-.aboutdonation {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 3rem;
-  padding: 1rem 4rem;
-
-}
-
-.aboutimage {
-  width: 400px;
-}
-.aboutdonation img {
-  /* margin: 1rem; */
-  grid-column: 3/4;
- 
-}
-
-.purpose {
-  margin: 0rem auto;
-  width:700px;
-}
-
-.maintext, .maincontent {
-  margin: 0;
-}
-
-  .maintex img {
-    margin: 0;
-}
-}
-
-footer {
-  padding: 4rem;
-    font-size: 1.2rem;
-}
-footer h2 {
-  text-transform: uppercase;
-
-}
-
 
 
