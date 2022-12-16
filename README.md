@@ -2,6 +2,10 @@
 
 Alumni Donate Platform
 
+# Hosting link to Project
+
+http://24.199.71.120:8000/
+
 ## Project Description
 
 
