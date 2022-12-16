@@ -4,6 +4,7 @@ from django.views.generic import CreateView
 from .models import *
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse, reverse_lazy
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 @login_required(login_url="/users/login")
@@ -29,6 +30,8 @@ def donate(request):
 
 def checkout_page(request):
     return render(request, 'donate_website/checkout.html')
+
+
 
 class MakeDonationView(CreateView):
     model = Donate

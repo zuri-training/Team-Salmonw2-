@@ -1,17 +1,65 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
-<body>
-    <h2>Create User Account</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{form.as_p}}
-        <input type="submit" />
-    </form>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup</title>
+        <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="img-logo">
+                <img src="{% static 'images/Alumni-logo.png' %}" alt="Logo">
+            </div>
+            <div class="head-txt">
+                <h2 class="txt"> SIGN UP</h2>
+            </div>
+
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="container">
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" required> <br><br>
+                <label for="pwd">Password</label><br>
+                <input type="password" id="password1" name="password1" required><br><br>
+                <label for="pwd">Confirm Password</label><br>
+                <input type="password" id="password2" name="password2" required><br><br>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" required>
+
+            </div>
+            <p> or continue with </p>
+            <div class="socials">
+
+                <div>
+                    <a href="https://www.linkedin.com/login" class="fa fa-linkedin"></a><span class="contact">Linkedin
+                    </span>
+                </div>
+                <div>
+                    <a href="https://accounts.google.com/signin" class="fa fa-google"></a><span class="contact">Google
+                    </span>
+                </div>
+                <div>
+                    <a href="https://m.facebook.com/login" class="fa fa-facebook"></a><span class="contact">Facebook
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <button type="submit" value="Log in">Sign Up</button>
+            </div>
+        </form>
+
+    </body>
+
 </html>
