@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     border: 0px;
 }
 body {
-    background-color: #ffddb4;
+    font-family: 'Poppins', sans-serif;
+}
+header, main {
+    background-color: #fff;
     margin-left: 70px;
-    font-family: 'Big Shoulders Display', 'cursive';
 }
 .container-one {
     display: flex;
@@ -26,25 +29,18 @@ body {
     width: 100%;
 }
 .wrapper-two h1 {
-    width: 38%;
     color: black;
-    font-weight: 800;
-    font-size: 70px;
+    font-weight: 600;
+    font-size: 50px;
     padding: 8px;
     text-align: center;
-    background-color: #a4bff1;
-    border: 2px solid #a4bff1;
-    border-radius: 10px;
 }
 .wrapper-two h2 {
-    max-width: 28%;
     color: black;
-    font-weight: 800;
-    font-size: 63px;
+    font-weight: 600;
+    font-size: 33px;
     padding: 3px;
     text-align: center;
-    background-color: #a4bff1;
-    border: 2px solid #a4bff1;
     border-radius: 10px;
 }
 .mini-wrapper {
@@ -56,6 +52,7 @@ body {
 }
 .container-two {
     margin-top: 20px;
+    margin-left: 17%;
 
 }
 .wrapper-three form label {
@@ -69,29 +66,124 @@ body {
     padding: 15px;
     margin:10px 0px;
     border-radius: 10px;
-    width: 40%;
+    width: 30%;
+    background-color: #e5e5e5;
 }
 .wrapper-four form {
     margin-top: 15px;
 }
 .wrapper-four button {
-    padding:7px;
-    border-radius: 3px;
-    background-color: rgb(77, 77, 152);
+    padding:10px;
+    border-radius: 5px;
+    background-color: #0a66c2;
 }
 .wrapper-four button a {
     text-decoration: none;
     color: white;
 }
-
+footer {
+    background-color: #0a66c2;
+    margin-top: 20px;
+}
+.wrapper-five {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 5px;
+}
+.column-one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+.column-one h1, .column-one p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+} 
+.column-one span {
+    margin-right: 15px;
+}
+.svg-row {
+    display: flex;
+    flex-direction: row;
+}
+.svg-row img {
+    border-radius: 10px;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+.column-two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.column-two p, .column-two a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.column-two h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.column-three {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.column-three p, .column-three a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.column-two a:hover, .column-one a:hover, .column-three a:hover {
+    background-color: #0a66c2;
+}
 @media only screen and (max-width: 950px) {
     body, .wrapper-two h2,.wrapper-two h1 {
         font-size:15px;
     }
     .wrapper-two h1 {
-        width: 20%;
+        width: 50%;
     }
     .wrapper-two h2 {
-        width: 15%;
+        width: 27%;
     }
+    .wrapper-three form input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body, .wrapper-two h2,.wrapper-two h1 {
+        font-size:15px;
+    }
+    .wrapper-two h1 {
+        width: 75%;
+    }
+    .wrapper-two h2 {
+        width: 37%;
+    }
+    .wrapper-five {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .column-two, .column-three {
+        margin-left: 20px;
+    }   
 }
