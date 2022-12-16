@@ -2,9 +2,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import CreateView
 from .models import *
+from django.contrib.auth.decorators import login_required
 from django.urls import reverse, reverse_lazy
 
 # Create your views here.
+@login_required(login_url="/users/login")
+def main(request):
+    return render(request, "donate_website/main.html")
+
+
 def index(request):
     user = request.user
 
