@@ -13,6 +13,10 @@
         <div class="smallbtn">
           <span><a class="aboutus" href="./about.html">About Us</a></span>
           <span><a class="donatenow" href="{% url 'donate' %}"> Donate</a>
+            
+            {% if request.user.is_superuser %}
+              <span><a class="donatenow" href="{% url 'main' %}"> Dashboard</a>
+            {% endif %}
           </span>
         </div>
       </div>
