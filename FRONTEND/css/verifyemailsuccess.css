@@ -1,5 +1,5 @@
 body {
-  background-color: #ffd0b4;
+  background-color: white;
   margin: 10px;
 }
 
@@ -24,10 +24,8 @@ img {
 }
 
 h2 {
-  background-color: #afbdd0;
   text-align: center;
-  padding: 10px 15px 10px 10px;
-  border-radius: 10px;
+  font-family: "Roboto Slab", serif;
 }
 
 .check {
@@ -39,4 +37,5 @@ h2 {
 
 p {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
