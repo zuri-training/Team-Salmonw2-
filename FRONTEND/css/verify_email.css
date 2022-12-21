@@ -16,8 +16,8 @@ main {
 }
 
 .inner2 {
-  margin: 0 auto;
   float: left;
+  margin-left: 30%;
 }
 
 h2 {
@@ -31,9 +31,9 @@ p {
 }
 
 img {
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  /* border-radius: 50%; */
+  height: 150px;
+  width: 150px;
 }
 
 .box2 {
